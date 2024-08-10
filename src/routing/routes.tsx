@@ -7,7 +7,7 @@ import Contact from "../componenets/Contact/Contact";
 import User from "../componenets/User/User";
 import Error from "../componenets/Error/Error";
 import EmailTemplate from "../emails/EmailTemplate";
-
+import Login from "../componenets/Login";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "users/:userid",
         element: <User />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
       {
         path: "send-email",
