@@ -6,6 +6,7 @@ import Layout from "../Layout";
 import Contact from "../componenets/Contact/Contact";
 import User from "../componenets/User/User";
 import Error from "../componenets/Error/Error";
+import EmailTemplate from "../emails/EmailTemplate";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "users/:userid",
         element: <User />,
+      },
+      {
+        path: "send-email",
+        element: <EmailTemplate />,
       },
     ],
   },
