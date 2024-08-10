@@ -1,9 +1,13 @@
 import { FormEvent, useRef } from "react";
+import { useForm } from "react-hook-form";
 
 function Login() {
   const nameRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
   const user = { username: "", password: "" };
+
+  const form = useForm();
+  console.log(form.register("al"));
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
